@@ -70,7 +70,7 @@ class frontendViewManagement extends Controller
 
       public function BlogSearch(Request $request){
           $search_text = $request->search;
-           $blog= post::where('title','like','%'.$search_text.'%')/* ->orWhere('description','like','%'.$search_text.'%') */->paginate(1);
+           $blog= post::where('title','like','%'.$search_text.'%')/* ->orWhere('description','like','%'.$search_text.'%') */->paginate(6);
 
            return view('frontend.blog_search',compact('blog'));
       }
