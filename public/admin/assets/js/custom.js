@@ -73,6 +73,11 @@ $('a#logout').click(function(e){
 
 });
 
+        // Data table set Up
+        $(document).ready( function () {
+            $('#post_table').DataTable();
+        } );
+
 
         //  Category delete fix
         $('.del_button').click(function(){
