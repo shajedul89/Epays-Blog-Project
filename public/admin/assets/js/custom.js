@@ -88,7 +88,11 @@ $('a#logout').click(function(e){
          });
 
 
-
+         // Menu Fix
+         $('#sidebar-menu ul li ul li.ok').parent('ul').slideDown();
+         $('#sidebar-menu ul li ul li.ok').parent('ul').parent('li').children('a').addClass('subdrop');
+         $('#sidebar-menu ul li ul li.ok a').css('color','#5ae8ff');
+         $('#sidebar-menu ul li ul li.ok').parent('ul').parent('li'). children('a') .css('background-color','#19c1dc');
 
 
 });
