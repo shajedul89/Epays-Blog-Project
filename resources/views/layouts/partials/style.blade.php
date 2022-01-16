@@ -14,4 +14,5 @@
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="{{asset('admin/assets/css/style.css')}}">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.3/css/jquery.dataTables.css">
     <script src="https://kit.fontawesome.com/f7695f2d09.js" crossorigin="anonymous"></script>

@@ -55,7 +55,7 @@
 
                             </div>
                             <div class="form-group">
-                                <input class="form-control" name="password" type="text" placeholder="Password">
+                                <input class="form-control" name="password" type="password" placeholder="Password">
 
                             </div>
                             <div class="form-group">
