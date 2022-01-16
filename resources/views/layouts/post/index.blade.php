@@ -53,7 +53,7 @@
 
                                     <tr>
                                         <td>{{ $loop -> index+1 }}</td>
-                                        <td><img src="{{ URL::to('') }}/media/post/{{ $data->images}}" alt="missing image" width="50px"></td>
+                                        <td><img src="{{-- {{ URL::to('') }}/media/post/ --}}{{ $data->images}}" alt="missing image" width="50px"></td>
                                         <td>{{ $data->title}}</td>
                                         <td>{{ $data->postCat->name }}</td>
 
