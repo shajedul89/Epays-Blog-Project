@@ -5,7 +5,7 @@
                     <li class="menu-title">
                         <span>Main</span>
                     </li>
-                    <li class="active">
+                    <li class="{{Route::currentRouteName()=='dashboard' }} ? 'active':'' }}">
                         <a href="{{route('home')}}"><i class="fas fa-tachometer-alt"></i> <span>Dashboard</span></a>
                     </li>
 
@@ -16,9 +16,10 @@
                     <li class="submenu">
                         <a href="#"> <i class="fas fa-list-ul"></i><span> Posts</span> <span class="menu-arrow"></span></a>
                         <ul style="display: none;">
-                            <li><a href="{{ route('post.index') }}"> <i class="fas fa-caret-right"></i> All Post</a></li>
-                            <li><a href="{{ route('postCategory.index') }}"> <i class="fas fa-caret-right"></i> Categories</a></li>
-                             <li><a href="{{ route('postTag.index') }}"> <i class="fas fa-caret-right"></i> Tags</a></li>
+                            <li class="{{ (Route::currentRouteName()=='post.create')? 'ok' : '' }}"><a href="{{ route('post.create') }}"> <i class="fas fa-caret-right"></i> Add New post</a></li>
+                            <li class="{{ (Route::currentRouteName()=='post.index')? 'ok' : '' }}"><a href="{{ route('post.index') }}"> <i class="fas fa-caret-right"></i> All Post</a></li>
+                            <li class="{{ (Route::currentRouteName()=='postCategory.index')? 'ok' : '' }}"><a href="{{ route('postCategory.index') }}"> <i class="fas fa-caret-right"></i> Categories</a></li>
+                             <li class="{{ (Route::currentRouteName()=='postTag.index')? 'ok' : '' }}"><a href="{{ route('postTag.index') }}"> <i class="fas fa-caret-right"></i> Tags</a></li>
 
                         </ul>
                     </li>
